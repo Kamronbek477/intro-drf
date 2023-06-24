@@ -7,8 +7,7 @@ from rest_framework.response import Response
 def main(request: Request) -> Response:
     params = request.query_params
 
-    print(params['name'])
 
     return Response({
-        "name": params['name']
+        "sum": int(params['a'])+int(params['b'])
     })
