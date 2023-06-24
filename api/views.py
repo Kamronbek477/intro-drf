@@ -4,10 +4,11 @@ from rest_framework.response import Response
 
 
 @api_view(['GET'])
-def main(request: Request) -> Response:
+def sum(request: Request) -> Response:
     params = request.query_params
 
 
     return Response({
         "sum": int(params['a'])+int(params['b'])
     })
+

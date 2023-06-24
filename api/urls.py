@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import main
+from .views import sum
 
 
 urlpatterns = [
-    path('home/', main)
+    
+    path('sum/', sum)
 ]
